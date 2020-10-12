@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>quiz.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+quiz.js</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">Quiz {</span>
+
+    <span class="s1">constructor(questions) {</span>
+        <span class="s0">this</span><span class="s1">.score = </span><span class="s2">0</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.questions = questions</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.questionIndex = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+
+    <span class="s1">getQuestionIndex() {</span>
+        <span class="s0">return this</span><span class="s1">.questions[</span><span class="s0">this</span><span class="s1">.questionIndex]</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">guess(answer) {</span>
+        <span class="s0">if </span><span class="s1">(</span><span class="s0">this</span><span class="s1">.getQuestionIndex().isCorrectAnswer(answer)) {</span>
+            <span class="s0">this</span><span class="s1">.score++</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">this</span><span class="s1">.questionIndex++</span><span class="s0">;</span>
+
+    <span class="s1">}</span>
+
+    <span class="s1">isEnded() {</span>
+        <span class="s0">return this</span><span class="s1">.questionIndex === </span><span class="s0">this</span><span class="s1">.questions.length</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>question.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+question.js</font>
+</center></td></tr></table>
+<pre><span class="s0">function </span><span class="s1">Question(text</span><span class="s0">, </span><span class="s1">choices</span><span class="s0">, </span><span class="s1">answer) {</span>
+    <span class="s0">this</span><span class="s1">.text = text</span><span class="s0">;</span>
+    <span class="s0">this</span><span class="s1">.choices = choices</span><span class="s0">;</span>
+    <span class="s0">this</span><span class="s1">.answer = answer</span><span class="s0">;</span>
+
+<span class="s1">}</span>
+
+<span class="s1">Question.prototype.isCorrectAnswer = </span><span class="s0">function</span><span class="s1">(choice) {</span>
+    <span class="s0">return this</span><span class="s1">.answer === choice</span><span class="s0">;</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
